@@ -1,12 +1,12 @@
-package se233.chapter5_tdd;
+package se233.chapter6_tdd;
 
 import javafx.embed.swing.JFXPanel;
 import javafx.geometry.Point2D;
 import org.junit.Before;
 import org.junit.Test;
-import se233.chapter5_tdd.model.Direction;
-import se233.chapter5_tdd.model.Food;
-import se233.chapter5_tdd.model.Snake;
+import se233.chapter6_tdd.model.Direction;
+import se233.chapter6_tdd.model.Food;
+import se233.chapter6_tdd.model.Snake;
 
 import static org.junit.Assert.*;
 

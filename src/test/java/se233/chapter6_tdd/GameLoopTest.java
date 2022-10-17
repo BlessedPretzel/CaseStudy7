@@ -1,14 +1,14 @@
-package se233.chapter5_tdd;
+package se233.chapter6_tdd;
 
 import javafx.embed.swing.JFXPanel;
 import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import org.junit.Before;
 import org.junit.Test;
-import se233.chapter5_tdd.controller.GameLoop;
-import se233.chapter5_tdd.model.Food;
-import se233.chapter5_tdd.model.Snake;
-import se233.chapter5_tdd.view.Platform;
+import se233.chapter6_tdd.controller.GameLoop;
+import se233.chapter6_tdd.model.Food;
+import se233.chapter6_tdd.model.Snake;
+import se233.chapter6_tdd.view.Platform;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -58,7 +58,7 @@ public class GameLoopTest {
         assertEquals(gameLoopUnderTest.getSnake().getHead(), new Point2D(0, 3));
     }
 
-    @Test
+    /*@Test
     public void scoreIncreasedByOneAfterSnakeEatTheFood() throws InvocationTargetException, IllegalAccessException, InterruptedException {
         gameLoopUnderTest = new GameLoop(new Platform(), new Snake(new Point2D(0, 0)), new Food(new Point2D(0, 1), false));
         assertEquals(0, gameLoopUnderTest.getPlatform().getScore().getValue());
@@ -74,5 +74,5 @@ public class GameLoopTest {
         Thread.sleep(100);
         clockTickHelper();
         assertEquals(5, gameLoopUnderTest.getPlatform().getScore().getValue());
-    }
+    }*/
 }
